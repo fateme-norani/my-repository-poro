@@ -22,14 +22,14 @@
 					$d=dir('./images/ax');
 					while($f=$d->read()){
 						if(strtolower(substr($f,-4))!='.jpg') continue;
-						echo "<img src='images/ax/$f' />";
+						echo "<img src='images/ax/$f' width='640' height='366' />";
 						$piclen+=1;	
 					}
 				?>
             </div>
         </div>
 	</div>
-	<ul class="dokme">
+	<ul class="dokme" style="width:" <?php echo '(640*$piclen)+"px"' ;?> ; ">
     	<?php
 				for($i=1;$i<=$piclen;$i++){
 					echo "<li><div></div></li>";	
