@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;	
+}
+
+body{
+	background-image:url(images/BrickRound0098_7_thumblarge.jpg);	
+}
+
+div.contaner{
+	width:920px;
+	height:400px;
+	margin:100px auto ;
+	/*outline:1px solid red;*/ 	
+}
+
+div.contaner div.left,
+div.contaner div.right{
+	width:100px;
+	height:inherit;
+	background-color:#eee;
+}
+
+div.contaner div.left{
+	float:left;
+	border-radius:60px 0 0 60px;
+	-moz-box-shadow:-5px 5px 10px #000000;
+	-webkit-box-shadow:-5px 5px 10px #000000;
+	position:relative;
+}
+
+div.contaner div.right{
+	float:right;
+	border-radius:0 60px 60px 0;
+	-moz-box-shadow:5px 5px 10px #000000;
+	-webkit-box-shadow:5px 5px 10px #000000;
+	position:relative;
+}
+
+div.contaner div.left input,
+div.contaner div.right input{
+	width:100px;
+	height:100px;
+	background-color:transparent;
+	position:absolute;
+	top:150px;
+	left:0;
+	border:none;
+	cursor:pointer;
+}
+
+div.contaner div.left input{
+	background-image:url(images/Misc-Back-icon.png);	
+}
+
+div.contaner div.left input:hover{
+		
+}
+
+div.contaner div.right input{
+	background-image:url(images/Misc-next-icon%20copy.png);
+}
+
+div.contaner div.midel{
+	margin-left:110px;
+	margin-right:110px;
+	height:397px;
+	-moz-box-shadow:0 10px 20px #000000;
+	-webkit-box-shadow:0 10px 20px #000000;
+	padding:1px;
+	background-color:#eee;
+}
+
+div.contaner div.banner{
+	width:640px;
+	height:366px;
+	/*outline:1px solid green;*/
+	overflow:hidden;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:13px;
+	position:relative;
+	-webkit-transition:all 1s;
+}
+
+div.contaner div.banner div.scrol{
+	width:7000px;
+	height:inherit;
+	position:absolute;
+	left:0px;
+	top:0;
+	-webkit-transition:all 1s;
+}
+
+div.contaner div.banner div.scrol > div{
+	width:640px;
+	height:inherit;
+	float:left;
+	z-index:10;
+	border:
+	background-repeat:no-repeat;
+}
+
+div.contaner div.banner div.scrol div.pic1{
+	background-image:url(images/sky1.jpg);	
+}
+
+div.contaner div.banner div.scrol div.pic2{
+	background-image:url(images/1.jpg);	
+}
+
+div.contaner div.banner div.scrol div.pic3{
+	background-image:url(images/sky2.jpg);	
+}
+
+div.contaner div.banner div.scrol div.pic4{
+	background-image:url(images/3.jpg);	
+}
+
+div.contaner ul.dokme{
+	width:140px;
+	min-height:50px;
+	/*outline:1px solid #fff;*/
+	list-style-type:none;
+	margin:30px auto;		
+}
+
+div.contaner li{
+	float:left;
+	margin-right:5px;
+	width:25px;
+	height:25px;
+	position:relative;
+	-webkit-transition:all 500ms;	
+}
+
+div.contaner li > div{
+	width:inherit;
+	height:inherit;
+	overflow:hidden;
+	background-image:url(images/back-li.PNG);
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+div.contaner li > div:hover,
+div.contaner li > div:active{
+	background:url(images/back-li.PNG) -25px 0;
+	cursor:pointer;
+}
