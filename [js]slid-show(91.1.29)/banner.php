@@ -18,18 +18,23 @@
 	<div class="midel">
         <div class="banner">
             <div class="scrol">
-                <div class="pic1"></div>
-                <div class="pic2"></div>
-                <div class="pic3"></div>
-                <div class="pic4"></div>
+                <?php 
+					$d=dir('./images/ax');
+					while($f=$d->read()){
+						if(strtolower(substr($f,-4))!='.jpg') continue;
+						echo "<img src='images/ax/$f' />";
+						$piclen+=1;	
+					}
+				?>
             </div>
         </div>
 	</div>
 	<ul class="dokme">
-    	<li><div></div></li>
-        <li><div></div></li>
-        <li><div></div></li>
-        <li><div></div></li>
+    	<?php
+				for($i=1;$i<=$piclen;$i++){
+					echo "<li><div></div></li>";	
+				}
+			?>	
     </ul>
 </div>
 </body>
