@@ -33,6 +33,7 @@ window.onload=function(){
 			}
 		})(i);
 	}
+	setInterval(nextSlid,4000);
 	document.getElementById('back').onclick=backSlid;
 	document.getElementById('next').onclick=nextSlid;
 }
