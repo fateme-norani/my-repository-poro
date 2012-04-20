@@ -33,9 +33,10 @@
 							echo "<div><div class='text'><p>$matn_text</p></div><img src='$directory/$f' /></div>";	
 						}
 						else{
-							$matn_text='';	
+							$matn_text='';
+							echo "<div><img src='$directory/$f' /></div>";	
 						}
-						echo "<div><img src='$directory/$f' /></div>";	
+							
 						$num_pic++;
 					}
 					
