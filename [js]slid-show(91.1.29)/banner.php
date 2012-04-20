@@ -19,19 +19,24 @@
         <div class="banner">
             <div class="scrol">
                 <?php 
-					$d=dir('./images/ax');
-					while($f=$d->read()){
-						if(strtolower(substr($f,-4))!='.jpg') continue;
-						echo "<img src='images/ax/$f' width='640' height='366' />";
-						$piclen+=1;	
+					$directory='./images/ax';
+					$type_image=array('jpeg','png','gif','jpg');
+					$d=dir($directory);
+					$num_pic=0;
+					while( $f=$d->read() ){
+						$file_type=end(explode('.',$f));
+						if(!in_array(strtolower($file_type),$type_image)) continue;
+						echo "<div><img src='$directory/$f' /></div>"	;
+						$num_pic++;
 					}
+					
 				?>
             </div>
         </div>
 	</div>
-	<ul class="dokme" style="width:" <?php echo '(640*$piclen)+"px"' ;?> ; ">
+	<ul class="dokme">
     	<?php
-				for($i=1;$i<=$piclen;$i++){
+				for($i=1;$i<=$num_pic;$i++){
 					echo "<li><div></div></li>";	
 				}
 			?>	
