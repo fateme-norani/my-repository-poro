@@ -26,7 +26,16 @@
 					while( $f=$d->read() ){
 						$file_type=end(explode('.',$f));
 						if(!in_array(strtolower($file_type),$type_image)) continue;
-						echo "<div><img src='$directory/$f' /></div>"	;
+						$file_name=substr($f,0,-strlen($file_type)-1);
+						$matn_path="$directory/$file_name.txt";
+						if(file_exists($matn_path)){
+							$matn_text=file_get_contents($matn_path);
+							echo "<div><div class='text'><p>$matn_text</p></div><img src='$directory/$f' /></div>";	
+						}
+						else{
+							$matn_text='';	
+						}
+						echo "<div><img src='$directory/$f' /></div>";	
 						$num_pic++;
 					}
 					
