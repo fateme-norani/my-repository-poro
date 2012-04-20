@@ -2,13 +2,21 @@
 window.onload=function(){
 	var scrolDiv=document.getElementsByClassName('banner').item(0).getElementsByClassName('scrol').item(0);
 	
-	var dokmeLi=document.getElementsByClassName('contaner').item(0).getElementsByClassName('dokme').item(0).getElementsByTagName('li');
+	var dokmeUl=document.getElementsByClassName('contaner').item(0).getElementsByClassName('dokme').item(0);
+	
+	var dokmeLi=dokmeUl.getElementsByTagName('li');
 	
 	var lenPic=dokmeLi.length;
 	//alert(lenPic);
 	var picWidth=640;
 	
 	var activSlid=0;
+	
+	scrolDiv.style.width=((picWidth*lenPic)+100)+'px';
+	
+	dokmeUl.style.width=(lenPic*(25+5))+'px';
+	
+	var ulbtns=document.getElementsByClassName('banner').item(0).getElementsByClassName('btn').item(0);
 	
 	function gotoslid(n){
 		if(n>=lenPic) n=0;

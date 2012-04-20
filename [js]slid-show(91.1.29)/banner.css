@@ -14,7 +14,8 @@ div.contaner{
 	width:920px;
 	height:400px;
 	margin:100px auto ;
-	/*outline:1px solid red;*/ 	
+	/*outline:1px solid red;*/
+	position:relative; 	
 }
 
 div.contaner div.left,
@@ -87,8 +88,7 @@ div.contaner div.banner{
 }
 
 div.contaner div.banner div.scrol{
-	width:7000px;
-	height:inherit;
+	height:366px;
 	position:absolute;
 	left:0px;
 	top:0;
@@ -121,11 +121,15 @@ div.contaner div.banner div.scrol div.pic4{
 }
 
 div.contaner ul.dokme{
-	width:140px;
-	min-height:50px;
+	height:50px;
 	/*outline:1px solid #fff;*/
 	list-style-type:none;
-	margin:30px auto;		
+	position:absolute;
+	right:0;
+	left:0;
+	bottom:0;
+	margin:-75px auto;
+			
 }
 
 div.contaner li{
