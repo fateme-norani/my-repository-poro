@@ -34,9 +34,12 @@ $(document).ready(function(){
 		});
 		$("p:contains(qef)").css("font-family","'Comic Sans MS', cursive");
 		$(":file").css("color","#09F");
-		$(":button").bind("click",function(){
-			$("div").slideToggle();	
+		$("button").bind({
+			click:function(){$("div").slideToggle();},
+			mouseover:function(){$("body").css("background-color","#FF9");},
+			mouseout:function(){$("body").css("background-color","#FFF");}
 		});
+		
     });	
 	
 </script>
@@ -57,7 +60,7 @@ $(document).ready(function(){
 <div>--------------------------------------</div>
 <div>ksjh ksjdh ksdjh skgh skutb sifu </div>
 <div>ksjh ksjdh ksdjh skgh skutb sifu </div>
-<input type="button" value="bind" />
+<button>bind</button>
 
 </body>
 </html>
