@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="jquery.min.js" ></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('p').click(function(){
+		$(this).hide(2000);	
+	});
+});
+	
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("p:not(.test1,.test3)").css("background-color","#36C").css("color","#FF6");
+	$(":header").css("background-color","green");
+  
+});
+</script>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		function pheight(){
+        	$("p:eq(1)").animate({opacity:"1"},"slow");
+			$("p:eq(1)").animate({opacity:"0.4"},"slow",pheight);
+		}
+		pheight();
+		$("input:eq(0)").click(function(){
+			$("p:animated").css("color","#930");	
+		});
+		$("p:contains(qef)").css("font-family","'Comic Sans MS', cursive");
+    });	
+	
+</script>
+</head>
+
+<body>
+<h6>hmhg jasgj,s jsd gjsh</h6>
+<p class="test1">qef fdf dfgdb dgdf</p>
+<p class="test2">fff ffff ffff fffffff</p>
+<p class="test3">kkkk kkk kkk k kkkkk kk</p>
+<p class="test4">e eeee eeeee eee eeee</p>
+<input type="button" value="press me" />
+</body>
+</html>
