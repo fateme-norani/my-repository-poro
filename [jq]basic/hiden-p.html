@@ -23,16 +23,17 @@ $(document).ready(function(){
 
 <script type="text/javascript">
 	$(document).ready(function(){
+		var jq=jQuery.noConflict()
 		function pheight(){
-        	$("p:eq(1)").animate({opacity:"1"},"slow");
-			$("p:eq(1)").animate({opacity:"0.4"},"slow",pheight);
+        	jq("p:eq(1)").animate({opacity:"1"},"slow");
+			jq("p:eq(1)").animate({opacity:"0.4"},"slow",pheight);
 		}
 		pheight();
-		$("input:eq(0)").click(function(){
-			$("p:animated").css("color","#930");	
+		jq("input:eq(0)").click(function(){
+			jq("p:animated").css("color","#930");	
 		});
-		$("p:contains(qef)").css("font-family","'Comic Sans MS', cursive");
-		$(":file").css("color","#09F");
+		jq("p:contains(qef)").css("font-family","'Comic Sans MS', cursive");
+		jq(":file").css("color","#09F");
     });	
 	
 </script>
