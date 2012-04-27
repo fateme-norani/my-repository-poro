@@ -39,6 +39,9 @@ $(document).ready(function(){
 			mouseover:function(){$("body").css("background-color","#FF9");},
 			mouseout:function(){$("body").css("background-color","#FFF");}
 		});
+		$(":text").focus(function(){$(":text").css("background-color","#CFF");	});
+			
+				
 		
     });	
 	
@@ -55,11 +58,15 @@ $(document).ready(function(){
 <p id="test">e eeee eeeee eee eeee</p>
 <form action="">
 	file:<input type="file" name="my file" />
-	<input type="button" value="press me" />
+    <br/>
+	name:<input type="text" name="nam" />
+    <br/>
+    <input type="button" value="press me" />
 </form>
 <div>--------------------------------------</div>
 <div>ksjh ksjdh ksdjh skgh skutb sifu </div>
 <div>ksjh ksjdh ksdjh skgh skutb sifu </div>
+
 <button>bind</button>
 
 </body>
