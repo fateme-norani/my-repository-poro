@@ -18,25 +18,29 @@ $(document).ready(function(){
 	$("p:not(.test1,.test3)").css("background-color","#36C").css("color","#FF6");
 	$(":header").css("background-color","green");
   	$("[id]").css("background-color","red");
+	
 });
 </script>
 
 <script type="text/javascript">
 	$(document).ready(function(){
-		var jq=jQuery.noConflict()
 		function pheight(){
-        	jq("p:eq(1)").animate({opacity:"1"},"slow");
-			jq("p:eq(1)").animate({opacity:"0.4"},"slow",pheight);
+        	$("p:eq(1)").animate({opacity:"1"},"slow");
+			$("p:eq(1)").animate({opacity:"0.4"},"slow",pheight);
 		}
 		pheight();
-		jq("input:eq(0)").click(function(){
-			jq("p:animated").css("color","#930");	
+		$("input:eq(0)").click(function(){
+			$("p:animated").css("color","#930");	
 		});
-		jq("p:contains(qef)").css("font-family","'Comic Sans MS', cursive");
-		jq(":file").css("color","#09F");
+		$("p:contains(qef)").css("font-family","'Comic Sans MS', cursive");
+		$(":file").css("color","#09F");
+		$(":button").bind("click",function(){
+			$("div").slideToggle();	
+		});
     });	
 	
 </script>
+
 </head>
 
 <body>
@@ -50,5 +54,10 @@ $(document).ready(function(){
 	file:<input type="file" name="my file" />
 	<input type="button" value="press me" />
 </form>
+<div>--------------------------------------</div>
+<div>ksjh ksjdh ksdjh skgh skutb sifu </div>
+<div>ksjh ksjdh ksdjh skgh skutb sifu </div>
+<input type="button" value="bind" />
+
 </body>
 </html>
