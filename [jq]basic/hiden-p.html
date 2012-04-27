@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Untitled Document</title>
+<title>test jq</title>
 <script type="text/javascript" src="jquery.min.js" ></script>
 <script type="text/javascript">
 $(document).ready(function() {
@@ -17,7 +17,7 @@ $(document).ready(function() {
 $(document).ready(function(){
 	$("p:not(.test1,.test3)").css("background-color","#36C").css("color","#FF6");
 	$(":header").css("background-color","green");
-  
+  	$("[id]").css("background-color","red");
 });
 </script>
 
@@ -32,6 +32,7 @@ $(document).ready(function(){
 			$("p:animated").css("color","#930");	
 		});
 		$("p:contains(qef)").css("font-family","'Comic Sans MS', cursive");
+		$(":file").css("color","#09F");
     });	
 	
 </script>
@@ -43,6 +44,10 @@ $(document).ready(function(){
 <p class="test2">fff ffff ffff fffffff</p>
 <p class="test3">kkkk kkk kkk k kkkkk kk</p>
 <p class="test4">e eeee eeeee eee eeee</p>
-<input type="button" value="press me" />
+<p id="test">e eeee eeeee eee eeee</p>
+<form action="">
+	file:<input type="file" name="my file" />
+	<input type="button" value="press me" />
+</form>
 </body>
 </html>
