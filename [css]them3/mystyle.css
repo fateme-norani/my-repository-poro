@@ -10,9 +10,29 @@ div.top-heder{
 	padding:1px;	
 }
 
+div.top-heder > div.right{
+	min-height:20px;
+	margin-top:35px;	
+}
 /* menu------------------------------------- */
 div.menu{
-	min-height:70px;	
+	min-height:69px;
+	padding:1px;	
+}
+div.menu div.left{
+	min-height:50px;	
+	margin-top:10px;
+	margin-left:10px;
+}
+
+div.menu div.right{
+	min-height:50px;
+	margin-top:15px;	
+}
+
+div.menu div.ml4{
+	min-height:25px;
+	margin-top:30px;	
 }
 
 /* heder -------------------------------------*/
@@ -20,10 +40,32 @@ div.heder{
 	min-height:380px;
 	margin-top:10px;
 }
+div.heder div.right{
+	min-height:inherit;	
+}
+
+div.heder > div.mr6{
+	min-height:inherit;
+}
+/* line1 -------------------------------------*/
+div.line1{
+	min-height:25px;	
+}
 
 /* down-heder --------------------------------*/
 div.down-heder{
-	min-height:303px;		
+	min-height:250px;
+	padding:1px;		
+}
+
+div.down-heder > div.left{
+	min-height:220px;
+	margin-top:20px;
+}
+
+div.down-heder div.ml18{
+	min-height:220px;
+	margin-top:20px;	
 }
 
 /*footer -------------------------------------*/
