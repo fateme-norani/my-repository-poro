@@ -1,0 +1,38 @@
+div{ /* only for test */
+	outline:1px dashed darkmagenta;
+}
+div.container{
+	background-image:url(bg.png);	
+}
+/* top-heder --------------------------------*/		
+div.top-heder{
+	min-height:68px;
+	padding:1px;	
+}
+
+/* menu------------------------------------- */
+div.menu{
+	min-height:70px;	
+}
+
+/* heder -------------------------------------*/
+div.heder{
+	min-height:380px;
+	margin-top:10px;
+}
+
+/* down-heder --------------------------------*/
+div.down-heder{
+	min-height:303px;		
+}
+
+/*footer -------------------------------------*/
+div.footer{
+	min-height:320px;
+	margin-top:10px;	
+}
+
+/*down-footer ---------------------------------*/
+div.down-footer{
+	min-height:60px;	
+}
