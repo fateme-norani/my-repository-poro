@@ -43,6 +43,13 @@ div.heder{
 div.heder div.right{
 	min-height:inherit;	
 }
+div.heder div.right div.top{
+	min-height:130px;	
+}
+
+div.heder div.right div.down{
+	height:230px;	
+}
 
 div.heder > div.mr6{
 	min-height:inherit;
@@ -63,6 +70,16 @@ div.down-heder > div.left{
 	margin-top:20px;
 }
 
+div.down-heder  div.left  div.top,
+div.down-heder div.ml18 div.top {
+	min-height:136px;
+}
+
+div.down-heder  div.left  div.down,
+div.down-heder div.ml18 div.down{
+	min-height:70px;	
+}
+
 div.down-heder div.ml18{
 	min-height:220px;
 	margin-top:20px;	
@@ -71,10 +88,49 @@ div.down-heder div.ml18{
 /*footer -------------------------------------*/
 div.footer{
 	min-height:320px;
-	margin-top:10px;	
+	margin-top:10px;
+		
 }
 
+div.footer > div{
+	min-height:inherit;	
+	outline:1px solid red;
+	padding:1px;
+}
+
+div.footer div.left div.top,
+div.footer div.right div.top,
+div.footer div.ml12 div.top{
+	min-height:25px;
+	margin-top:18px;	
+}
+
+div.footer div.left div.middel{
+	min-height:130px;	
+}
+
+div.footer div.left div.down{
+	min-height:120px;	
+}
+
+div.footer div.left div.middel > div,
+div.footer div.left div.down > div{
+	min-height:inherit;	
+}
+
+div.footer div.right div.down{
+	min-height:130px;	
+}
+
+div.footer div.ml12 div.down{
+	min-height:130px;	
+}
 /*down-footer ---------------------------------*/
 div.down-footer{
 	min-height:60px;	
+}
+
+div.down-footer >div{
+	min-height:40px;
+	margin-top:10px;	
 }
