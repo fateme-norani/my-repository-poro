@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+div{
+	/*outline:1px dashed red;*/	
+}
+div.top{
+	min-height:30px;	
+}
+
+div.accslid{
+	width:900px;
+	overflow:hidden;
+	margin:0 auto;	
+}
+div.tran{
+	width:1000px;	
+}
+
+div.accslid .tran > div{
+	width:180px;
+	overflow:hidden;
+	float:left;	
+}
