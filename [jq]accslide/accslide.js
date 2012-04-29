@@ -7,4 +7,9 @@ $(function(){
 		slide.stop().animate({'width':'100px'},700);
 		$(this).stop().animate({'width':'500px'},700);	
 	});	
+	$('.accslid').mouseout(function(){
+		slide.stop().animate({
+			'width':'180'	
+		},700);
+	});
 });
