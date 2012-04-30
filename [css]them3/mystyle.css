@@ -19,13 +19,12 @@ div.menu{
 	min-height:69px;
 	padding:1px;	
 }
-div.menu div.left{
+div.menu div.logo{
 	min-height:50px;	
 	margin-top:10px;
-	margin-left:10px;
 }
 
-div.menu div.right{
+div.menu div.nav{
 	min-height:50px;
 	margin-top:15px;	
 }
@@ -40,7 +39,7 @@ div.heder{
 	min-height:380px;
 	margin-top:10px;
 }
-div.heder div.right{
+div.heder div.text-heder{
 	min-height:inherit;	
 }
 div.heder div.right div.top{
@@ -65,17 +64,17 @@ div.down-heder{
 	padding:1px;		
 }
 
-div.down-heder > div.left{
+div.down-heder > div.slid{
 	min-height:220px;
 	margin-top:20px;
 }
 
-div.down-heder  div.left  div.top,
+div.down-heder  div.slid  div.top,
 div.down-heder div.ml18 div.top {
 	min-height:136px;
 }
 
-div.down-heder  div.left  div.down,
+div.down-heder  div.slid  div.down,
 div.down-heder div.ml18 div.down{
 	min-height:70px;	
 }
@@ -98,27 +97,27 @@ div.footer > div{
 	padding:1px;
 }
 
-div.footer div.left div.top,
+div.footer div.from-the-blog div.top,
 div.footer div.right div.top,
 div.footer div.ml12 div.top{
 	min-height:25px;
 	margin-top:18px;	
 }
 
-div.footer div.left div.middel{
+div.footer div.from-the-blog div.middel{
 	min-height:130px;	
 }
 
-div.footer div.left div.down{
+div.footer div.from-the-blog div.down{
 	min-height:120px;	
 }
 
-div.footer div.left div.middel > div,
-div.footer div.left div.down > div{
+div.footer div.from-the-blog div.middel > div,
+div.footer div.from-the-blog div.down > div{
 	min-height:inherit;	
 }
 
-div.footer div.right div.down{
+div.footer div.flickr-widget div.down{
 	min-height:130px;	
 }
 
