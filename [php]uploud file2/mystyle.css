@@ -1,0 +1,65 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1{
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;	
+}
+body{
+	background-image:url(images/back-body.png);	
+}
+
+div.heder{
+	margin:0px auto;
+	margin-top:10px;
+	min-height:100px;
+	text-align:center;
+	color:#A85400;
+	padding:1px;
+	
+}
+
+div.heder input[type=submit]{
+	background-color:transparent;
+	width:153px;
+	height:40px;
+	background-image:url(images/sub-btn.png);
+	background-repeat:no-repeat;
+	border:none;
+	cursor:pointer;
+	margin-top:10px;
+}
+
+div.show{
+	height:500px;
+	background-image:url(images/bg_wrap_cmg.jpg);
+	padding:1px;
+	background-repeat:no-repeat;
+}
+
+div.show div.text{
+	min-height:30px;
+	text-align:center;
+	color:#FFFFFF;
+	font-family:"Comic Sans MS", cursive;
+	font-size:20px;
+	margin-top:10px;
+}
+
+div.show div.imagha{
+	height:260px;
+	border-radius:10px;
+	margin:30px auto;	
+	overflow:hidden;
+}
+input[type=file]{
+	margin-top:10px;
+	cursor:pointer;
+	width:250px;
+	height:30px;
+	background-color:transparent;
+	background-image:none;
+	background-image:url(images/choos-file.png);
+	background-repeat:no-repeat;
+	
+}
+
