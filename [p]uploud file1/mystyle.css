@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+div{
+	
+} 
+div.vasat{
+	margin:30px auto;
+	font-family:"Comic Sans MS", cursive;
+	font-size:18px;
+	color:#336;
+	background-color:#eef;
+	padding:30px;
+	border-radius:30px;	
+}
+p{
+	display:inline;
+	color:#CC3300;	
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
