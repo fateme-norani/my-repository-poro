@@ -19,8 +19,9 @@
 	//echo "ok";
 	mysql_select_db('mydb',$sql_con) or db_error();
 	
-	$res=mysql_query("select * from  phonebook WHERE lname='mahdavi'") or db_error() ;
-	while($row=mysql_fetch_array($res,MYSQL_ASSOC)){
+	$res=mysql_query("INSERT INTO phonebook (fname,lname,age) VALUES ('soror', 'miri','27')") or db_error() ;
+	$res1=mysql_query("select * from phonebook") or db_error() ; 
+	while($row=mysql_fetch_array($res1,MYSQL_ASSOC)){
 		echo "$row[fname] $row[lname] <br/>";
 	};
 	
