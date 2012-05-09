@@ -11,10 +11,10 @@
 <body>
 <?php
 	require_once('db.php');
+	
 	db_connect();
 	
-	
-	?>
+?>
 
 <div class="bg-light">
     <div class="container">
@@ -29,7 +29,7 @@
                 	<?php
 					$rows=db_getrows(0,"kalaname","kala",1);
 					?>
-                	 <h3><?php echo show_array(0,"kalaname",$rows) ?></h3>
+					<h3><?php echo show_array(0,"kalaname",$rows) ?></h3>
 					
 					<?php $rows=db_getrows(0,"text","kala",1);?>
 					
@@ -47,7 +47,7 @@
                 	<?php
 					$rows=db_getrows(0,"kalaname","kala",2);
 					?>
-                	 <h3><?php echo show_array(0,"kalaname",$rows) ?></h3>
+					<h3><?php echo show_array(0,"kalaname",$rows) ?></h3>
 					
 					<?php $rows=db_getrows(0,"text","kala",2);?>
 					
@@ -64,7 +64,7 @@
                 	<?php
 					$rows=db_getrows(0,"kalaname","kala",3);
 					?>
-                	 <h3><?php echo show_array(0,"kalaname",$rows) ?></h3>
+					<h3><?php echo show_array(0,"kalaname",$rows) ?></h3>
 					
 					<?php $rows=db_getrows(0,"text","kala",3);?>
 					
@@ -81,7 +81,7 @@
                 	<?php
 					$rows=db_getrows(0,"kalaname","kala",4);
 					?>
-                	 <h3><?php echo show_array(0,"kalaname",$rows) ?></h3>
+					<h3><?php echo show_array(0,"kalaname",$rows) ?></h3>
 					
 					<?php $rows=db_getrows(0,"text","kala",4);?>
 					
@@ -98,7 +98,7 @@
                 	<?php
 					$rows=db_getrows(0,"kalaname","kala",5);
 					?>
-                	 <h3><?php echo show_array(0,"kalaname",$rows) ?></h3>
+					<h3><?php echo show_array(0,"kalaname",$rows) ?></h3>
 					
 					<?php $rows=db_getrows(0,"text","kala",5);?>
 					
