@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-image:url(images/002.jpg);
+	background-attachment:fixed;	
+}
+div.bg-light{
+	background-image:url(images/light.png);
+	background-attachment:fixed;
+	background-repeat:no-repeat;	
+}
+div{
+	/*outline:1px dashed red;*/
+}
+div.container > div{
+	width:927px;
+	margin:0 auto;
+}
+div.container{
+	min-height:600px;
+	background-image:url(images/boxed-container-shadow.png);
+	padding:1px;
+	
+	}
+/* heder -----------------------------------------------------------*/
+div.heder{
+	height:99px;
+	background-image:url(images/bg-h.PNG);
+	background-repeat:no-repeat;
+	
+	padding-top:1px;
+}
+
+div.heder:hover{
+	cursor:pointer;	
+}
+/* content ----------------------------------------------------------*/
+div.content{
+	background-color:#FFFFFF;
+	min-height:500px;
+	padding-top:1px;
+	padding-bottom:1px;
+}
+
+div.content div.row{
+	min-height:200px;
+	margin:0 auto;
+	border-bottom:1px solid #D1D2D2;
+	margin-top:20px;
+	padding-top:1px;
+	position:relative;	
+}
+
+div.content div.row div.ax{
+	width:166px;
+	height:inherit;
+	margin-top:10px;
+	margin-left:20px;	
+}
+
+div.row div.shadow{
+	width:166px;
+	min-height:10px;
+	position:absolute;
+	left:19px;
+	top:177px;
+	background-image:url(images/shadow-product.png);	
+}
+div.content div.row div.ax img{
+	border:1px solid #A6A6A8;
+	padding:7px;		
+}
+
+div.content div.row div.ax img:hover{
+	border:1px solid #7F7F7F;
+	cursor:pointer;	
+}
+
+div.content div.row div.text{
+	min-height:inherit;
+	
+}
+h3{
+	padding-left:20px;
+	padding-top:10px;
+	font-family:"Comic Sans MS", cursive;
+	color:#232221;	
+}
+div.text div.matn{
+	padding:10px 20px;
+	padding-bottom:20px;
+	font-family:"Comic Sans MS", cursive;
+	color:#5E6060;	
+}
+/* footer -----------------------------------------------------------*/
+div.footer{
+	width:230px;
+	min-height:100px;	
+	background-color:#FFFFFF;
+}
+div.footer div.w22{
+	margin:0 auto;
+		
+}
