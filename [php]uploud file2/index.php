@@ -18,7 +18,7 @@
     
     <div class="show w24">
 		<?php
-        
+       
 			function upload_img($dir_path, $size_limit){
 			
 				$file = $_FILES['myfile'];
@@ -44,11 +44,11 @@
 			   
 				return $file_path;
 			}
-		//if( isset($_Post['myfile']) && isset($_Post['Submit'])) {
+		 if( isset( $_FILES['myfile']) ) {
 			$img = upload_img('./uploud',300);
 			
 			if($img) echo "<div class='text w24'>Path : $img</div><div class='imagha w12'><img src='$img' width='470' /></div>";
-		//}
+		}
       ?>
 	</div >
    
