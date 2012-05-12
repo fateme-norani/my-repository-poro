@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="zepto.min.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
+</head>
+
+<body>
+<div class="d">
+	<h1> h1 h1 fffff</h1>
+    <h3>h3 h3 bbbbbbb</h3>
+    <p>pp ppp ppp</p>
+</div>
+<h2>h2 gfdgdfgdfg</h2>
+<script>
+	document.write('<script src=' +
+	('__proto__' in {} ? 'zepto' : 'jquery') +
+	'.js><\/script>')
+</script>
+<script>
+	&(function(){
+		alert('not redy zepto');
+	});
+</script>
+<script>
+	Zepto(function($){
+	  alert('Ready to Zepto!');
+	  $('<p>Emphasis mine.</p>').insertAfter('h2');
+	  $('<p>See the following h1:</p>').insertBefore('h1');
+	  $('h1').css({ backgroundColor: '#8EE', fontSize: 40 });
+	  var i=$('.d').index();
+	  alert(i);
+	  $('p').html(function(idx, oldHtml){
+		  return oldHtml.replace(/(^|\W)@(\w{1,15})/g,
+			'$1@<a href="http://twitter.com/$2">$2</a>')
+		});
+		alert($('h1').parents());
+	  var d=is(h1);
+	  alert (d);
+	  remove(h3) ;
+	  
+	})
+</script>
+
+
+</body>
+</html>
