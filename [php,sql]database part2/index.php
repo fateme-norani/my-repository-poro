@@ -22,7 +22,10 @@
         <div class="content ">
             <div class="row w19">
             	<div class="ax left">
-                	<img src="images/warmroom-150x150.jpg" width="150" height="150"  />
+                	<?php
+					$rows=db_getrows(0,"ax","kala",1);
+					?>
+                	<img src="images/<?php echo show_array(0,"ax",$rows) ?>" width="150" height="150"  />
                 </div>
                 <div class="shadow "></div>
                 <div class="text last ml5 ">
@@ -40,7 +43,10 @@
             </div>
             <div class="row w19">
             	<div class="ax left">
-                	<img src="images/001.png" width="150" height="150"  />
+                	<?php
+					$rows=db_getrows(0,"ax","kala",2);
+					?>
+                	<img src="images/<?php echo show_array(0,"ax",$rows) ?>" width="150" height="150"  />
                 </div>
                 <div class="shadow "></div>
                 <div class="text last ml5 ">
@@ -57,7 +63,10 @@
             </div>
             <div class="row w19">
             	<div class="ax left">
-                	<img src="images/001b-150x150.jpg" width="150" height="150"  />
+                	<?php
+					$rows=db_getrows(0,"ax","kala",3);
+					?>
+                	<img src="images/<?php echo show_array(0,"ax",$rows) ?>" width="150" height="150"  />
                 </div>
                 <div class="shadow "></div>
                 <div class="text last ml5 ">
@@ -74,7 +83,10 @@
             </div>
             <div class="row w19">
             	<div class="ax left">
-                	<img src="images/Fotolia_19668952_Subscription_XL-150x150.jpg" width="150" height="150"  />
+                	<?php
+					$rows=db_getrows(0,"ax","kala",4);
+					?>
+                	<img src="images/<?php echo show_array(0,"ax",$rows) ?>" width="150" height="150"  />
                 </div>
                 <div class="shadow "></div>
                 <div class="text last ml5 ">
@@ -91,7 +103,10 @@
             </div>
             <div class="row w19">
             	<div class="ax left">
-                	<img src="images/interior-150x150.jpg" width="150" height="150"  />
+                	<?php
+					$rows=db_getrows(0,"ax","kala",5);
+					?>
+                	<img src="images/<?php echo show_array(0,"ax",$rows) ?>" width="150" height="150"  />
                 </div>
                 <div class="shadow "></div>
                 <div class="text last ml5 ">
