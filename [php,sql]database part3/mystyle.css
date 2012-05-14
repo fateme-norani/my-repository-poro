@@ -79,7 +79,24 @@ div.content div.row div.ax img:hover{
 
 div.content div.row div.text{
 	min-height:inherit;
-	
+	position:relative;
+}
+
+div.row div.text div.more{
+	width:inherit;
+	min-height:10px;
+	display:none;
+}
+
+div.row div.text button{
+	width:100px;
+	height:37px;
+	background-repeat:no-repeat;
+	background-image:url(images/more-details-button.jpg);
+	border:none;
+	background-color:transparent;	
+	margin-left:400px;
+	margin-bottom:10px;
 }
 h3{
 	padding-left:20px;
@@ -87,7 +104,8 @@ h3{
 	font-family:"Comic Sans MS", cursive;
 	color:#232221;	
 }
-div.text div.matn{
+div.text div.matn,
+div.text div.more{
 	padding:10px 20px;
 	padding-bottom:20px;
 	font-family:"Comic Sans MS", cursive;

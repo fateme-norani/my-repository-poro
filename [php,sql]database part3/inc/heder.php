@@ -6,6 +6,9 @@
 <link type="text/css" rel="stylesheet" href="reset.css"  />
 <link type="text/css" rel="stylesheet" href="1styles.css"  />
 <link type="text/css" rel="stylesheet" href="mystyle.css"  />
+<script type="text/javascript" src="zepto.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
@@ -15,3 +18,4 @@
     <div class="container">
         <div class="heder "></div>
         <div class="content ">
+       

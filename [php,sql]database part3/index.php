@@ -3,18 +3,19 @@
 	require_once('inc/modules.php');
 	
 	include('inc/heder.php');
-	
-	
 ?>
+
 <?php
-db_connect();
 
-$kalaha= db_getrows('kala');
+	db_connect();
+	
+	$kalaha= db_getrows('kala');
+	
+	show_poroduct($kalaha);
+	
+	
+	db_close();
 
-show_poroduct($kalaha);
-
-
-db_close();
 ?>
             
             

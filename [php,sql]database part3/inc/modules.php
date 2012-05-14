@@ -39,7 +39,10 @@ function show_poroduct($kalaha){
                 <div class='text last ml5 '>
 					<h3>$kala[kalaname]</h3>
 					<div class='matn'>$kala[text]</div>
+					<div class='more'>$kala[more]</div>
+					<button type='button' value=''/>
 				</div>
+				<div class='clear'></div>
 			</div>
 		";	
 	}
