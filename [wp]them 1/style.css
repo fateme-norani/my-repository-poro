@@ -1,0 +1,129 @@
+/*
+Theme Name: Wordpress CMS
+Theme URI: 
+Description: basic theme for use wordpress as a cms.
+Author: fateme norani
+Version: 1
+*/
+
+
+/* Global Layout
+-------------------------------------------------- */
+
+div{
+	min-height:20px;
+	/*outline:1px dashed red;*/ 
+}
+div.backimage{
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	z-index:-1;
+	background-image:url('images/background.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center top;
+}
+div.container{
+	padding-top:20px;
+	font-family : 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+/* topheder
+------------------------------------------------------*/
+div.container-topheder{
+	min-height:30px;
+	padding: 10px 0px ;
+}
+
+div.topemil{
+	background-color:#ffd62c;
+	padding:3px 7px;
+	margin-right: 10px;
+}
+/* menu
+------------------------------------------------------*/
+div.container-menu{
+	padding: 10px 15px ;
+	margin-bottom:10px;
+	background-color: #fff;
+}
+
+div.logo h1{
+	width:148px;
+	height:47px;
+	background-image: url('images/scope_logo.jpg');
+	background-repeat:no-repeat;
+	text-indent:1000px;
+	overflow:hidden;
+	background-size:100%;
+}
+/* topmenu
+-------------------------------------------------------*/
+div.topmenu{
+	margin-top:10px;
+}
+div.topmenu > ul{
+
+}
+div.topmenu li{
+	float: left;
+	position:relative;
+}
+div.topmenu a{
+	padding: 12px;
+	display: block;
+	color: #b2b2b6;
+	text-decoration:none;
+	font-size:16px;
+	text-transform:capitalize;
+	font-weight:bold;
+}
+div.topmenu li:hover a{
+	color: #222;
+}
+/* content
+-------------------------------------------------------*/
+div.container-content{
+	min-height:400px;
+	background-color: #fff;
+	padding: 20px;
+	margin-bottom: 10px;
+}
+div.content div.post {
+	text-align:justify;
+	line-height:1.7;
+	font-size:15px;
+}
+
+div.content div.post h2{
+	font-size:24px;
+	margin-bottom: 20px;
+}
+/* footer
+-------------------------------------------------------*/
+div.container-footer{
+	padding:10px;
+}
+article.footermenu{
+
+}
+article.footermenu ul{
+
+}
+article.footermenu li{
+	float:right;
+
+}
+article.footermenu a{
+	display: block;
+	color: #333;
+	font-size:16px;
+	padding:4px 10px;
+	text-decoration:none;
+	font-weight:bold;
+}
+article.footermenu li:hover a{
+	color: #111;
+}

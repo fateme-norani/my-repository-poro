@@ -1,0 +1,34 @@
+
+install wordpress
+
+delete posts
+
+Permalink
+
+user setting
+
+add theme (index.php, style.css)
+
+add comment to style.css
+
+active theme in wp-admin
+
+css
+
+layout
+
+menu
+
+------
+
+wp_list_pages (http://codex.wordpress.org/Function_Reference/wp_list_pages)
+
+have_posts
+
+the_post
+
+$post
+
+$post->post_title
+
+$post->post_parent
